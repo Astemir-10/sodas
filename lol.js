@@ -3060,6 +3060,7 @@ eval(function(p, a, c, k, e, d) {
                     o.buildURLFromParts(i)
                 }
                 var a = o.parseURL(e);
+                alert(a);
                 if (!a)
                     throw new Error("Error trying to parse relative URL.");
                 if (a.scheme)
