@@ -3567,6 +3567,7 @@ eval(function(p, a, c, k, e, d) {
                     } else if (i[3]) {
                     var h = new v(i[3]);
                     h["DATA-ID"] && (s = !0, a[h["DATA-ID"]] = h)
+                    alert(a.toString());
                 }
                 return {
                     levels: n,
@@ -3783,7 +3784,7 @@ eval(function(p, a, c, k, e, d) {
 
         function _(t, e) {
             var r = t.url;
-            alert(r);
+            // alert(r);
             return void 0 !== r && 0 !== r.indexOf("data:") || (r = e.url), r
         }
         var I = function() {
