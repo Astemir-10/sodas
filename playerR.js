@@ -228,7 +228,6 @@ eval(function(p, a, c, k, e, d) {
                     },
                     set: function(t) {
                         this._url = t
-                        alert(t);
                     }
                 }]), t
             }(),
@@ -2206,6 +2205,7 @@ eval(function(p, a, c, k, e, d) {
                     return i.path = o.normalizePath(i.path), o.buildURLFromParts(i)
                 }
                 var a = o.parseURL(e);
+                alert(a);
                 if (!a) throw new Error("Error trying to parse relative URL.");
                 if (a.scheme) return r.alwaysNormalize ? (a.path = o.normalizePath(a.path), o.buildURLFromParts(a)) : e;
                 var s = o.parseURL(t);
