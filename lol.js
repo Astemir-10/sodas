@@ -393,7 +393,7 @@ eval(function(p, a, c, k, e, d) {
                 },
                 set: function(t) {
                     this._url = t;
-                    alert(t);
+                    
                 }
             }]),
             t
@@ -3060,7 +3060,7 @@ eval(function(p, a, c, k, e, d) {
                     o.buildURLFromParts(i)
                 }
                 var a = o.parseURL(e);
-                
+                alert(a);
                 if (!a)
                     throw new Error("Error trying to parse relative URL.");
                 if (a.scheme)
@@ -5320,7 +5320,7 @@ eval(function(p, a, c, k, e, d) {
         var k = r(4);
         function _(t, e) {
             var r = t.url;
-                        alert(r);
+                        
             return void 0 !== r && 0 !== r.indexOf("data:") || (r = e.url),
             r
         }
