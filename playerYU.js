@@ -31,7 +31,7 @@ $(document).ready(function() {
 
 /* PLAYER */
 function getDataPlayer(postId, type) {
-    $.post('/api/movies/player-data?t=' + new Date().getTime(), {
+    $.post('https://filmix.date/api/movies/player-data?t=' + new Date().getTime(), {
         post_id: postId,
         showfull: true
     }, function(data) {
@@ -322,7 +322,7 @@ function saveAdminTime() {
 
     data.time = player.api("time");
 
-    $.post('/api/timeshift/save', data, function(res) {
+    $.post('https://filmix.date/api/timeshift/save', data, function(res) {
         if (res.type === 'error') {
             common.showInfo(res.message);
             return false;
