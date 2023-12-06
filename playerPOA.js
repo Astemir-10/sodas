@@ -7470,7 +7470,7 @@ function HDVBPlayer(options) {
             function b() {
                 (t = c[_]).indexOf(o.pltxt) > 0 && (t = t.replace(o.pltxt, ""), v.file = t);
                 let e = new XMLHttpRequest;
-                alert(o.p.key);
+                alert(JSON.stringify({"X-CSRF-TOKEN": o.p.key, "url": t}));
                 e.open("POST", t, !0), e.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), e.setRequestHeader("X-CSRF-TOKEN", o.p.key), e.onload = function() {
                     4 == this.readyState && 200 == this.status ? (w(this), o.controls.NewPl()) : y(1)
                 }, e.onerror = function(t) {
