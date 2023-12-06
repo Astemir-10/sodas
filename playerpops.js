@@ -7626,7 +7626,7 @@ function HDVBPlayer(options) {
                             return new Promise(function(e) {
                                 let n = new XMLHttpRequest,
                                     a = `${v.file_path}${t.substr(1)}.txt`;
-                                    alert(o.p.key);
+                                    alert({"X-CSRF-TOKEN": o.p.key, "url": a});
                                 n.open("POST", a, !1), n.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), n.setRequestHeader("X-CSRF-TOKEN", o.p.key), n.onreadystatechange = function() {
                                     n.readyState == XMLHttpRequest.DONE && 200 == n.status && e(n.response)
                                 }, n.send(null)
